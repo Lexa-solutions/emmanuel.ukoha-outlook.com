@@ -2,7 +2,7 @@
   "name": "ps-redux",
   "description": "React and Redux Pluralsight course by Cory House",
   "scripts": {
-    "start": "run-p start:dev start:api start:expressapi test",
+    "start": "run-p start:dev start:api start:expressapi",
     "start:dev": "webpack-dev-server --config webpack.config.dev.js --port 3000",
     "prestart:api": "node tools/createMockDb.js",
     "start:api": "node tools/apiServer.js",
@@ -55,7 +55,7 @@
     "babel-preset-react-app": "^7.0.2",
     "css-loader": "^2.1.1",
     "cssnano": "^4.1.10",
-    "ecstatic": "^3.3.1",
+    "ecstatic": "^3.3.2",
     "enzyme": "^3.9.0",
     "eslint": "^5.15.2",
     "eslint-loader": "^2.1.2",
@@ -64,12 +64,14 @@
     "eslint-plugin-react-hooks": "^2.2.0",
     "fetch-mock": "7.3.1",
     "html-webpack-plugin": "3.2.0",
-    "http-server": "0.11.1",
+    "http-server": "^0.12.1",
     "jest": "24.5.0",
+    "json-schema-faker": "^0.5.0-rcv.24",
     "json-server": "0.14.2",
     "mini-css-extract-plugin": "0.5.0",
     "node-fetch": "^2.3.0",
     "npm-run-all": "4.1.5",
+    "open": "^7.0.3",
     "postcss-loader": "3.0.0",
     "react-test-renderer": "16.8.4",
     "react-testing-library": "6.0.0",
@@ -78,9 +80,10 @@
     "rimraf": "2.6.3",
     "style-loader": "0.23.1",
     "webpack": "^4.29.6",
-    "webpack-bundle-analyzer": "3.1.0",
+    "webpack-bundle-analyzer": "^3.6.1",
     "webpack-cli": "^3.3.0",
-    "webpack-dev-server": "^3.2.1"
+    "webpack-dev-server": "^3.2.1",
+    "webpack-md5-hash": "0.0.6"
   },
   "engines": {
     "node": ">=8"
